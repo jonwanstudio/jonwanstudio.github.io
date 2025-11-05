@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="dark"> <!-- Defaulting to dark mode for a sleek portfolio feel -->
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *** MODIFICATION *** -->
     <title>Jonathan Wan - Engineering Portfolio</title>
     
     <!-- Tailwind CSS CDN -->
@@ -47,7 +48,6 @@
 
     <!-- 
       Header / Navigation
-      - Simplified for a portfolio
     -->
     <header class="sticky top-0 z-50 w-full">
         <nav class="bg-black/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-800">
@@ -56,15 +56,17 @@
                     
                     <!-- Logo (Code Icon) -->
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="#" aria-label="Homepage">
+                        <!-- *** MODIFICATION: Link to index.html *** -->
+                        <a href="index.html" aria-label="Homepage">
                             <svg class="h-6 w-6 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                         </a>
                     </div>
 
                     <!-- Main Nav Links (Desktop) -->
                     <div class="hidden md:flex md:items-center md:space-x-8">
-                        <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">About</a>
-                        <a href="#projects" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Projects</a>
+                        <!-- *** MODIFICATION: Updated links for multi-page site *** -->
+                        <a href="about.html" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">About</a>
+                        <a href="projects.html" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Projects</a>
                         <a href="#skills" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Skills</a>
                         <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Contact</a>
                     </div>
@@ -93,8 +95,9 @@
             <!-- Mobile Menu (Dropdown) -->
             <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur-md border-b border-gray-700">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <a href="#about" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                    <a href="#projects" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                    <!-- *** MODIFICATION: Updated links for multi-page site *** -->
+                    <a href="about.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="projects.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
                     <a href="#skills" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
                     <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
@@ -107,7 +110,6 @@
 
         <!-- 
           Hero Section
-          - Introduces you
         -->
         <section id="home" class="text-center pt-32 pb-24 px-4 min-h-[60vh] flex flex-col justify-center items-center">
             <h1 class="text-6xl md:text-8xl font-black tracking-tight hero-text-gradient">
@@ -120,127 +122,59 @@
                 I design and validate high-performance electromechanical systems that bridge hardware, software, and real-world impact
             </p>
             <div class="mt-10 flex justify-center gap-6">
-                <a href="#projects" class="text-blue-500 hover:underline text-lg md:text-xl">View My Projects &gt;</a>
+                <a href="projects.html" class="text-blue-500 hover:underline text-lg md:text-xl">View My Projects &gt;</a>
                 <a href="#contact" class="text-gray-300 hover:text-white text-lg md:text-xl">Get in Touch &gt;</a>
             </div>
         </section>
 
-        <!-- 
-          About Me Section
-          - Light background for contrast
-        -->
-        <section id="about" class="bg-white text-black py-24 px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-4xl md:text-6xl font-bold text-center">
-                    About Me
-                </h2>
-                <p class="text-lg md:text-xl text-gray-700 mt-8 leading-relaxed text-left md:text-center">
-                    Hello! I’m Jonathan Wan, a mechatronic systems engineer with 3+ years of hands-on experience from co-op in hardware validation, product design, and system integration across automotive, imaging, and medical technologies. I thrive on solving complex engineering challenges, from automating validation workflows and prototyping electromechanical systems to leading design optimization in Formula SAE. My passion lies at the intersection of innovation and reliability, creating solutions that bridge mechanical precision with intelligent systems to drive the future of mobility and connected technology.
-                </p>
-                <p class="text-lg md:text-xl text-gray-700 mt-4 leading-relaxed text-left md:text-center">
-                    When I’m not engineering or testing hardware, you’ll find me designing FSAE vehicle components, optimizing 3D prints, or experimenting with automation and embedded systems.
-                </p>
-            </div>
-        </section>
-
-        <!-- 
-          Skills Section
-        -->
         <section id="skills" class="py-24 px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-4xl md:text-6xl font-bold text-white">My Toolkit</h2>
                 <p class="text-lg md:text-xl text-gray-400 mt-4 mb-12">
-                    Technologies I work with daily to build and deploy applications.
+                    The technologies I use every day to turn mechanical designs and hardware ideas into real, working systems.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Python</span>
-                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Go</span>
+                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">C/C++</span>
                     <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">JavaScript</span>
-                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">React</span>
-                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Node.js</span>
-                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">PostgreSQL</span>
-                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Docker</span>
-                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Kubernetes</span>
+                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">SolidWorks</span>
+                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Fusion 360</span>
+                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">MATLAB</span>
+                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Altium</span>
                     <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">AWS</span>
-                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Terraform</span>
+                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Cura</span>
+                    <span class="bg-gray-800 text-gray-300 text-lg font-medium py-2 px-5 rounded-full">Linux</span>
                 </div>
             </div>
         </section>
 
-        <!-- 
-          Projects Grid Section
-        -->
-        <section id="projects" class="py-8 px-4">
-            <h2 class="text-4xl md:text-6xl font-bold text-white text-center mb-16">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl mx-auto">
-                
-                <!-- Project 1 -->
-                <div class="bg-neutral-900 text-white p-12 rounded-lg text-center h-[550px] flex flex-col justify-between overflow-hidden">
-                    <div class="pt-8">
-                        <h3 class="text-4xl font-bold project-text-gradient">Project Title One</h3>
-                        <p class="text-xl mt-2 text-gray-300">A high-scale data processing pipeline for real-time analytics.</p>
-                        <div class="mt-4 flex justify-center gap-6">
-                            <a href="#" class="text-blue-500 hover:underline text-md">View Code &gt;</a>
-                            <a href="#" class="text-blue-500 hover:underline text-md">Live Demo &gt;</a>
-                        </div>
-                    </div>
-                    <img 
-                        src="https://placehold.co/600x350/222222/555555?text=Project+Screenshot+1" 
-                        alt="Project 1 Screenshot" 
-                        class="w-full max-w-md mx-auto rounded-md shadow-lg"
-                        onerror="this.src='https://placehold.co/600x350/222222/555555?text=Image+Not+Available'"
-                    >
-                </div>
-
-                <!-- Project 2 -->
-                <div class="bg-neutral-100 text-black p-12 rounded-lg text-center h-[550px] flex flex-col justify-between overflow-hidden">
-                    <div class="pt-8">
-                        <h3 class="text-4xl font-bold text-black">Project Title Two</h3>
-                        <p class="text-xl mt-2 text-gray-700">A public-facing REST API for a popular e-commerce platform.</p>
-                        <div class="mt-4 flex justify-center gap-6">
-                            <a href="#" class="text-blue-600 hover:underline text-md">View Code &gt;</a>
-                            <a href="#" class="text-blue-600 hover:underline text-md">Live Demo &gt;</a>
-                        </div>
-                    </div>
-                    <img 
-                        src="https://placehold.co/600x350/f5f5f5/777777?text=Project+Screenshot+2" 
-                        alt="Project 2 Screenshot" 
-                        class="w-full max-w-md mx-auto rounded-md shadow-lg"
-                        onerror="this.src='https://placehold.co/600x350/f5f5f5/777777?text=Image+Not+Available'"
-                    >
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 
-          Contact Section
-        -->
         <section id="contact" class="bg-gray-100 text-black py-24 px-4">
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-4xl md:text-6xl font-bold">Get in Touch</h2>
                 <p class="text-lg md:text-xl text-gray-700 mt-4 mb-12">
                     Have a question, an opportunity, or just want to chat? My inbox is always open.
                 </p>
+                
                 <div id="success-message" class="hidden max-w-lg mx-auto p-4 mb-6 bg-green-100 text-green-800 border border-green-300 rounded-md shadow-sm">
                     <strong class="font-bold">Message Sent!</strong>
                     <span class="block sm:inline">Thanks for getting in touch. I'll get back to you soon.</span>
-                </div>  
-                
-                <form id="contact-form" action="https://formsubmit.co/jonathan_wan@outlook.com" method="POST" class="w-full max-w-lg mx-auto text-left space-y-6">
-                     <input type="hidden" name="_next" id="redirect-url">
+                </div>
 
+                <form id="contact-form" action="https://formsubmit.co/jonathan_wan@outlook.com" method="POST" class="w-full max-w-lg mx-auto text-left space-y-6">
+                    
+                    <input type="hidden" name="_next" id="redirect-url">
+                    
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-800">Your Name</label>
                         <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Jonathan Wan" required>
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-800">Your Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="jonathan_wan@outlook.com">
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="jonathan_wan@outlook.com" required>
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-800">Message</label>
-                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message..."></textarea>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message..." required></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-full transition-colors duration-200">
@@ -255,7 +189,6 @@
 
     <!-- 
       Footer
-      - Simplified with social links
     -->
     <footer class="bg-neutral-900 text-gray-400 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -290,21 +223,49 @@
             const hamburgerIcon = document.getElementById('hamburger-icon');
             const closeIcon = document.getElementById('close-icon');
 
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                hamburgerIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
-            });
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    hamburgerIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
 
             // Close mobile menu when a link is clicked
             const mobileLinks = document.querySelectorAll('#mobile-menu a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    hamburgerIcon.classList.remove('hidden');
-                    closeIcon.classList.add('hidden');
+                    // This logic is simplified since we are navigating away
+                    // But good to keep in case we're clicking an anchor on the same page
+                    if(link.getAttribute('href').startsWith('#')) {
+                        mobileMenu.classList.add('hidden');
+                        hamburgerIcon.classList.remove('hidden');
+                        closeIcon.classList.add('hidden');
+                    }
                 });
             });
+
+            /* JavaScript for Form Success Message
+            */
+            
+            const redirectInput = document.getElementById('redirect-url');
+            if (redirectInput) {
+                const redirectURL = window.location.origin + window.location.pathname + "?message-sent=true#contact";
+                redirectInput.value = redirectURL;
+            }
+
+            // 2. Check for the "success" query when the page loads
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('message-sent')) {
+                const successMessage = document.getElementById('success-message');
+                if (successMessage) {
+                    successMessage.classList.remove('hidden');
+                }
+                const contactForm = document.getElementById('contact-form');
+                if (contactForm) {
+                    contactForm.classList.add('hidden');
+                }
+            }
         });
     </script>
 
