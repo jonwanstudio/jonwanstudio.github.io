@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project - Ankle Foot Orthosis (AFO)</title>
+    <title>Project 3 - FSAE Frame Jig</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -38,14 +38,14 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-14">
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="index.html" class="text-xl font-bold text-white">
-                            JW
+                        <a href="index.html" aria-label="Homepage">
+                            <svg class="h-6 w-6 text-gray-200 hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                         </a>
                     </div>
                     <div class="hidden md:flex md:items-center md:space-x-8">
                         <a href="about.html" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">About</a>
                         <a href="projects.html" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Projects</a>
-                        <a href="photos.html" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Photos</a>
+                        <a href="photos.html" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Photography</a>
                         <a href="index.html#skills" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Skills</a>
                         <a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Contact</a>
                     </div>
@@ -66,7 +66,7 @@
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <a href="about.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
                     <a href="projects.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-                    <a href="photos.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Photos</a>
+                    <a href="photography.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Photography</a>
                     <a href="index.html#skills" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
                     <a href="index.html#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
@@ -80,15 +80,15 @@
             
             <!-- Project Header -->
             <div class="text-center mb-16">
-                <h1 class="text-5xl md:text-7xl font-bold project-text-gradient">Ankle Foot Orthosis (AFO)</h1>
-                <p class="text-xl md:text-2xl text-gray-300 mt-4">Custom Orthopedic Brace Design</p>
+                <h1 class="text-5xl md:text-7xl font-bold project-text-gradient">Project 3: FSAE Frame Jig</h1>
+                <p class="text-xl md:text-2xl text-gray-300 mt-4">Precision Alignment & Assembly System</p>
             </div>
 
             <!-- Project Image -->
             <div class="mb-16">
                 <img 
-                    src="https://placehold.co/1200x600/222222/555555?text=Front+view+of+an+AFO" 
-                    alt="A front view of an AFO in Freeform Plus." 
+                    src="https://placehold.co/1200x600/222222/555555?text=CAD+of+the+frame+jig+with+the+frame" 
+                    alt="CAD of the frame jig with the frame" 
                     class="w-full h-auto rounded-lg shadow-xl object-cover"
                     onerror="this.src='https://placehold.co/1200x600/222222/555555?text=Image+Not+Available'"
                 >
@@ -101,16 +101,16 @@
                 <div class="md:col-span-2">
                     <h2 class="text-3xl font-bold text-white mb-6">Objectives</h2>
                     <ul class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 mb-8">
-                        <li>Design custom orthopedic braces, focusing on legs, tailored to individual patient anatomy and needs.</li>
-                        <li>Develop and refine a new workflow for the design process of orthopedic devices.</li>
-                        <li>Understand biomechanical interactions involving forces and pressures with the designed devices.</li>
+                        <li>Design a frame jig system for the Formula SAE vehicle for SFU Team Phantom.</li>
+                        <li>Ensure precise alignment and assembly of the car frame components.</li>
+                        <li>Enhance structural integrity and accuracy of the frame.</li>
                     </ul>
 
                     <h2 class="text-3xl font-bold text-white mb-6">Outcomes & Contributions</h2>
                     <ul class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2">
-                        <li>Developed a unique AFO with a variable bending angle to accommodate specific patient needs.</li>
-                        <li>Utilized advanced design software (Geomagic Freeform Plus, Fusion 360, nTopology) for creating precise 3D models and simulations.</li>
-                        <li>Completed the design utilizing SLS for the final production of the devices.</li>
+                        <li>Developed a frame jig system using wooden boards and 3D printed donuts for angle alignments.</li>
+                        <li>Achieved near-perfect frame assembly in physical model.</li>
+                        <li>Learned about the different tolerances of different FDM printers and incorporating different print calibrations into designing the parts.</li>
                     </ul>
                 </div>
 
@@ -118,14 +118,13 @@
                 <div class="md:col-span-1">
                     <!-- Key Features -->
                     <div class="bg-neutral-900 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-bold text-white mb-4">Technical Skills</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4">Technical Details & Skills</h3>
                         <ul class="list-disc list-inside text-gray-300 space-y-2">
-                            <li>Freeform CAD</li>
-                            <li>Geomagic Freeform Plus</li>
-                            <li>Fusion 360</li>
-                            <li>nTopology</li>
-                            <li>Selective Laser Sintering (SLS)</li>
-                            <li>Biomechanical Analysis</li>
+                            <li>Additive Manufacturing</li>
+                            <li>GD&T (Geometric Dimensioning & Tolerancing)</li>
+                            <li>Laser Cutting</li>
+                            <li>Solidworks CAD</li>
+                            <li>Tolerance Analysis</li>
                         </ul>
                     </div>
                 </div>
@@ -136,10 +135,10 @@
             <div class="mt-24">
                 <h2 class="text-3xl font-bold text-white mb-8 text-center">Gallery</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <img src="https://placehold.co/600x400/222222/555555?text=Front+view+of+an+AFO" alt="A front view of an AFO in Freeform Plus." class="w-full h-auto rounded-lg shadow-lg object-cover">
-                    <img src="https://placehold.co/600x400/222222/555555?text=Side+view+of+a+special+case+AFO" alt="A side view of a special case AFO." class="w-full h-auto rounded-lg shadow-lg object-cover">
-                    <img src="https://placehold.co/600x400/222222/555555?text=Completed+special+AFO" alt="The completed special AFO with the metal joints attached." class="w-full h-auto rounded-lg shadow-lg object-cover">
-                    <img src="https://placehold.co/600x400/222222/555555?text=AFO+3D+Model+Render" alt="AFO 3D Model Render" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                    <img src="https://placehold.co/600x400/222222/555555?text=Wooden+boards+from+laser+cutting" alt="Wooden boards from laser cutting" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                    <img src="https://placehold.co/600x400/222222/555555?text=3D+printed+donuts" alt="3D printed donuts that sandwiches the wooden boards" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                    <img src="https://placehold.co/600x400/222222/555555?text=Physical+frame+jig+half-assembled" alt="The physical frame jig half-assembled" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                    <img src="https://placehold.co/600x400/222222/555555?text=Tack+welding+of+frame+tubes" alt="The tack welding of the frame tubes" class="w-full h-auto rounded-lg shadow-lg object-cover">
                 </div>
             </div>
             
